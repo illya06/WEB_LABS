@@ -13,58 +13,70 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
+
+    <!-- JS scripts     -->
+    <script src="../js/js.js"></script>
+
     <title>WEB Lab 1</title>
 </head>
 
 <body>
-    <div class="container mb-5">
-        <div class="input-group mt-5 container">
-            <span class="input-group-text" id="basic-addon1">Input</span>
-            <input type="text" class="form-control">
+    <div class="container">
+        <div class="container mt-5 mb-5">
+            <div class="input-group container">
+                <span class="input-group-text" id="basic-addon1">Input</span>
+                <input type="text" class="form-control">
+            </div>
         </div>
-    </div>
-    <div class="container mt-5">
-        <table class="table table-bordered border-dark">
-            <tr>
-                <td>First name</td>
+        <div class="container mt-5">
+            <table class="table table-bordered border-dark">
+                <tr>
+                    <td>First name</td>
 
-                <td>Timophiy</td>
-                <td>Yulia</td>
-                <td>Antony</td>
-                <td>Vitya</td>
-                <td>Sergiy</td>
-            </tr>
-            <tr>
-                <td>Last name</td>
+                    <td>Timophiy</td>
+                    <td>Yulia</td>
+                    <td>Antony</td>
+                    <td>Vitya</td>
+                    <td>Sergiy</td>
+                </tr>
+                <tr>
+                    <td>Last name</td>
 
-                <td>Tkachenko</td>
-                <td>Panas</td>
-                <td>Tsubylnyk</td>
-                <td>Khomyn</td>
-                <td>Kondratuk</td>
-            </tr>
-            <tr>
-                <td>Age</td>
+                    <td>Tkachenko</td>
+                    <td>Panas</td>
+                    <td>Tsubylnyk</td>
+                    <td>Khomyn</td>
+                    <td>Kondratuk</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
 
-                <td>19</td>
-                <td>18</td>
-                <td>19</td>
-                <td>19</td>
-                <td>19</td>
-            </tr>
-            <tr>
-                <td>Sex</td>
+                    <td>19</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>19</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>Sex</td>
 
-                <td>Male</td>
-                <td>Female</td>
-                <td>Male</td>
-                <td>Male</td>
-                <td>Male</td>
-            </tr>
-        </table>
-    </div>
-    <div class="container mt-5 mb-5 mx-auto">
-        <span>Here`s a <a href="photo.html">link</a></span>
+                    <td>Male</td>
+                    <td>Female</td>
+                    <td>Male</td>
+                    <td>Male</td>
+                    <td>Male</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container mt-5 mb-5 mx-auto">
+            <span>Here`s a <a href="photo.html">link</a></span>
+        </div>
+        <div class="container">
+            <button type="button" class="btn btn-dark" onclick="add()">Add node</button>
+            <button type="button" class="btn btn-dark" onclick="remove()">Remove node</button>
+            <button type="button" class="btn btn-dark" onclick="insert()">Insert node</button>
+            <div id="add"></div>
+        </div>
     </div>
 </body>
 
