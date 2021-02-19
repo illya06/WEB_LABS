@@ -21,8 +21,10 @@
 </head>
 
 <body class="fon">
-    <div class="container row">
-        <div class="container mt-5 col-8">
+    <div class="container row" style="margin-top: 5%;">
+        
+        <!-- chess table -->
+        <div class="container col-10 mx-auto" style="padding-left: 10%;">
             <div class="leftside">
                 <div class="bPar">1</div>
                 <div class="bNepar">2</div>
@@ -33,7 +35,7 @@
                 <div class="bPar">7</div>
                 <div class="bNepar">8</div>
             </div>
-            <table border="0">
+            <table>
                 <tr>
                     <td class="par"></td>
                     <td class="nepar"></td>
@@ -152,7 +154,7 @@
                 </tr>
             </table>
             <div class="bottom">
-                <span class="bNepar" style="margin-left: 17px;">a</span>
+                <span class="bNepar">a</span>
                 <span class="bPar">b</span>
                 <span class="bNepar">c</span>
                 <span class="bPar">d</span>
@@ -162,8 +164,24 @@
                 <span class="bPar">h</span>
             </div>
         </div>
-        <div class="container col-4">
 
+        <!-- log form -->
+        <div class="container-fluid col-2 my-auto pt-4 px-4 bg-light" style="border: 1 solid; border-radius: 5%; height: 300px">
+            <form class="mx-auto ">
+                <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label">Are you a bot?</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </div>
 </body>

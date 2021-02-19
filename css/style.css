@@ -12,39 +12,49 @@
     color: #f0f8ff;
 }
 
-.bottom span {
-    margin-right: 38px;
-}
-
-.bottom {
-    margin-top: -20px;
-    z-index: 20;
-}
+/* Design of border coordinates */
 
 .bPar {
     color: #996666;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .bNepar {
     color: #f0f8ff;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .leftside {
-    padding-left: -30px;
-    margin-bottom: -410px;
+    margin-bottom: -805px;
 }
 
 .leftside div {
-    padding-bottom: 25px;
+    padding-left: 5px;
+    padding-bottom: 70px;
 }
 
+.bottom span {
+    margin-right: 10px;
+    margin-left: 75px;
+}
+
+.bottom {
+    margin-top: -30px;
+    z-index: 20;
+}
+
+/* End of border coordinates design */
+
+
 td {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     color: #4d2525;
 }
 
 img {
-    height: 40px;
+    height: 90px;
     margin: auto;
 }
