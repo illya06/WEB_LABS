@@ -5,25 +5,25 @@
 .par {
     background-color: #f0f8ff;
     color: #996666;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .nepar {
     background-color: #996666;
     color: #f0f8ff;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* Design of border coordinates */
 
 .bPar {
     color: #996666;
-    font-size: 20px;
-    font-weight: bold;
 }
 
 .bNepar {
     color: #f0f8ff;
-    font-size: 20px;
-    font-weight: bold;
 }
 
 .leftside {
@@ -54,10 +54,8 @@
     border-radius: 2%;
     height: 350px;
     width: 300px;
-    
     background-color: #996666;
     color: #f0f8ff;
-
     padding: 25px 25px 25px 25px;
     margin-top: 15em;
     margin-left: 8em;
@@ -66,9 +64,22 @@
 /* End of register form style */
 
 td {
+    position: relative;
     width: 100px;
     height: 100px;
     color: #4d2525;
+}
+
+td div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+td span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 img {
@@ -76,6 +87,6 @@ img {
     margin: auto;
 }
 
-button{
+button {
     margin-left: 5em;
 }
