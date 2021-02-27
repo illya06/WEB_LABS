@@ -146,19 +146,32 @@
             </div>
 
             <!-- log form -->
-            <div class="container-fluid col-lg-3 col-12">
-                <form class="registerForm" method="GET">
+            <div class="container-fluid col-lg-3 col-12 mb-5">
+                <form class="registerForm" method="GET" action="recieved.html">
                     <div class="mb-3">
-                        <label class="form-label">Email address</label>
-                        <input type="email" class="form-control">
+                        <label class="form-label" for="email">Email address</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Password</label>
-                        <input type="password" class="form-control">
+                        <label class="form-label" for="password">Password</label>
+                        <input type="password" class="form-control" name="password" min="8" max="20" pattern="[a-zA-Z0-9]+" id="password" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for=""></label>
+                        <input type="" class="form-control" name="" id="" required>
                     </div>
                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input">
-                        <label class="form-check-label">Are you a bot?</label>
+                        <input type="checkbox" class="form-check-input" id="bot" name="bot" value="true">
+                        <label class="form-check-label" for="bot">Are you a bot?</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <span style="margin-left: -1.6em;">Are you a human?</span>
+                        <br>
+                        <input type="radio" class="form-check-input" id="htrue" name="human" value="true">
+                        <label class="form-check-label" for="htrue">Yess</label>
+                        <br>
+                        <input type="radio" class="form-check-input" id="hfalse" name="human" value="false">
+                        <label class="form-check-label" for="hfalse">Nope</label>
                     </div>
                     <div class="mb-3">
                         To read the rules follow the <a href="photo.html" class="link-info">link</a>
