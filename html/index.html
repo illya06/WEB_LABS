@@ -27,7 +27,9 @@
             <div class="container col-lg-9 col-12">
                 <table>
                     <tr>
-                        <td class="par"><div>1</div></td>
+                        <td class="par">
+                            <div>1</div>
+                        </td>
                         <td class="nepar"></td>
                         <td class="par">
                             <img src="../img/black/bTura.png" alt="picture">
@@ -39,7 +41,9 @@
                         <td class="nepar"></td>
                     </tr>
                     <tr>
-                        <td class="nepar"><div>2</div></td>
+                        <td class="nepar">
+                            <div>2</div>
+                        </td>
                         <td class="par"></td>
                         <td class="nepar">
                             <img src="../img/white/wPawn.png" alt="picture">
@@ -91,7 +95,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="par"><div>5</div></td>
+                        <td class="par">
+                            <div>5</div>
+                        </td>
                         <td class="nepar">
                             <img src="../img/black/bSlon.png" alt="picture">
                         </td>
@@ -107,7 +113,9 @@
                         <td class="nepar"></td>
                     </tr>
                     <tr>
-                        <td class="nepar"><div>6</div></td>
+                        <td class="nepar">
+                            <div>6</div>
+                        </td>
                         <td class="par"></td>
                         <td class="nepar"></td>
                         <td class="par"></td>
@@ -117,7 +125,9 @@
                         <td class="par"></td>
                     </tr>
                     <tr>
-                        <td class="par"><div>7</div></td>
+                        <td class="par">
+                            <div>7</div>
+                        </td>
                         <td class="nepar"></td>
                         <td class="par"></td>
                         <td class="nepar">
@@ -131,7 +141,9 @@
                         <td class="nepar"></td>
                     </tr>
                     <tr>
-                        <td class="nepar"><div>8</div><span>a</span></td>
+                        <td class="nepar">
+                            <div>8</div><span>a</span>
+                        </td>
                         <td class="par"> <span>b</span></td>
                         <td class="nepar"><span>c</span></td>
                         <td class="par"><span>d</span></td>
@@ -148,17 +160,29 @@
             <!-- log form -->
             <div class="container-fluid col-lg-3 col-12 mb-5">
                 <form class="registerForm" method="GET" action="recieved.html">
-                    <div class="mb-3">
+                    <div class="form-group mb-3">
                         <label class="form-label" for="email">Email address</label>
                         <input type="email" class="form-control" name="email" id="email" required>
                     </div>
-                    <div class="mb-3">
+                    <div class="form-group mb-3">
                         <label class="form-label" for="password">Password</label>
-                        <input type="password" class="form-control" name="password" min="8" max="20" pattern="[a-zA-Z0-9]+" id="password" required>
+                        <input type="password" class="form-control" name="password" min="8" max="20"
+                            pattern="[a-zA-Z0-9]+" id="password" required>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label" for=""></label>
-                        <input type="" class="form-control" name="" id="" required>
+                    <div class="form-group mb-3">
+                        <label for="age">Your age</label>
+                        <select class="form-control" id="age" name="age" required>
+                          <option>0-4</option>
+                          <option>5-11</option>
+                          <option>12-17</option>
+                          <option>18-22</option>
+                          <option>23-30</option>
+                          <option>30-infinity</option>
+                        </select>
+                      </div>
+                    <div class="form-group mb-3">
+                        <label for="noSharing">We reealy won`t share what you type in. For REAL.</label>
+                        <textarea class="form-control" id="noSharing" rows="3" name="sharedText" maxlength="200"></textarea>
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="bot" name="bot" value="true">
@@ -176,8 +200,10 @@
                     <div class="mb-3">
                         To read the rules follow the <a href="photo.html" class="link-info">link</a>
                     </div>
-                    <button type="submit" class="btn btn-outline-light btn-block">Submit</button>
-                </form>
+                    <input type="hidden" id="ammaHiddenId" name="ammaHidden" value="niihao">
+                    <input  type="submit" class="btn btn-outline-light btn-block" value="Submit"/>
+                <button class="btn btn-outline-light" style="margin-left: 15px;" onclick="doSomething()">JS functionality</button>
+            </form>
             </div>
         </div>
     </div>
