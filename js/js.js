@@ -22,10 +22,7 @@ function buildChart() {
 
     var ctx = document.getElementById("coolChart").getContext('2d');
     var chart = new Chart(ctx, {
-        // The type of chart we want to create
         type: 'line',
-
-        // The data for our dataset
         data: {
             labels: ['King', 'Queen', 'Tura', 'Horse', 'Slon', 'Pawn'],
             datasets: [{
@@ -41,14 +38,14 @@ function buildChart() {
 function countFigures() {
     let ammount = [];
     let figures = document.getElementsByTagName('img');
-    
+
     Array.from(figures).forEach(element => {
         data.set(element.alt, data.get(element.alt) + 1);
     });
 
-    data.forEach((val, key)=>{
+    data.forEach((val, key) => {
         ammount.push(val);
     })
 
-    return  ammount;
+    return ammount;
 }
