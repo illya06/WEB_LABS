@@ -1,24 +1,54 @@
 
+function main() {
+    doSomething();
+    buildChart();
+}
 
-// function add() {
-//     let element = document.getElementById('add');
-//     let addedItem = document.createElement('span');
-//     addedItem.innerText = 'ADDED SOME TEXT';
-//     element.append(addedItem);
-// }
+let data = new Map([
+    ['king', 0],
+    ['queen', 0],
+    ['tura', 0],
+    ['horse', 0],
+    ['slon', 0],
+    ['pawn', 0]
+]);
 
-// function remove(){
-//     let element = document.querySelector('#add > span');
-//     element.remove();
-// }
-
-// function insert(){
-//     let element = document.getElementById('add');
-//     let newItem = document.createElement('span');
-//     newItem.innerText = 'ADDED SOME OTHER TEXT';
-//     element.after(newItem);
-// }
-
-function doSomething(){
+function doSomething() {
     document.getElementById("noSharing").value = "I`m going to share this text";
+}
+
+function buildChart() {
+    let dataSet = countFigures();
+
+    var ctx = document.getElementById("coolChart").getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ['King', 'Queen', 'Tura', 'Horse', 'Slon', 'Pawn'],
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                data: dataSet
+            }]
+        }
+    });
+}
+
+function countFigures() {
+    let ammount = [];
+    let figures = document.getElementsByTagName('img');
+    
+    Array.from(figures).forEach(element => {
+        data.set(element.alt, data.get(element.alt) + 1);
+    });
+
+    data.forEach((val, key)=>{
+        ammount.push(val);
+    })
+
+    return  ammount;
 }
