@@ -5,7 +5,7 @@ function doom() {
     document.getElementById('doomsDay').appendChild(timer);
     document.getElementById('start').disabled = true;
     let intID = setInterval(() => makeDoom([intID, figures]), 1000);
-    
+
 }
 
 function createTimer() {
@@ -27,6 +27,10 @@ function makeDoom([intervalTimeout, imgsToDelete]) {
     //figures exeqution
     imgsToDelete[happyNumber].parentNode.removeChild(imgsToDelete[happyNumber]);
 
-    if(timerObj.value == timerObj.max)
+
+    if (timerObj.value == timerObj.max) {
+        //reveal the pain
+        buildChart();
         clearInterval(intervalTimeout);
+    }
 }
