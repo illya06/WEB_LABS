@@ -13,22 +13,22 @@ let data = new Map([
     ['pawn', 0]
 ]);
 
+//form related stuff
 function doSomething() {
     document.getElementById("noSharing").value = "I`m going to share this text";
 }
 
 function buildChart() {
-    let dataSet = countFigures();
 
+    let dataSet = countFigures();
     var ctx = document.getElementById("coolChart").getContext('2d');
-    var chart = new Chart(ctx, {
+    new Chart(ctx, {
         type: 'line',
         data: {
             labels: ['King', 'Queen', 'Tura', 'Horse', 'Slon', 'Pawn'],
             datasets: [{
                 label: 'My First dataset',
-                backgroundColor: 'rgb(255, 99, 132)',
-                borderColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(0, 0, 0)',
                 data: dataSet
             }]
         }
@@ -43,7 +43,7 @@ function countFigures() {
         data.set(element.alt, data.get(element.alt) + 1);
     });
 
-    data.forEach((val, key) => {
+    data.forEach(val => {
         ammount.push(val);
     })
 
