@@ -1,5 +1,6 @@
 function doom(){
-
+    let timer = createTimer();
+    document.getElementById('doomsDay').appendChild(timer);
 }
 
 function createTimer(){
