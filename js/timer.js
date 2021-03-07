@@ -1,9 +1,10 @@
 
 function doom() {
+    let figures = document.getElementsByTagName('img');
     let timer = createTimer();
     document.getElementById('doomsDay').appendChild(timer);
     document.getElementById('start').disabled = true;
-    let intID = setInterval(() => makeDoom(intID), 1000);
+    let intID = setInterval(() => makeDoom([intID, figures]), 1000);
     
 }
 
@@ -17,10 +18,15 @@ function createTimer() {
     return time;
 }
 
-function makeDoom(intervalTimeout) {
+function makeDoom([intervalTimeout, imgsToDelete]) {
     let timerObj = document.querySelector('#doomsDay > input');
+    let happyNumber = Math.floor((Math.random() * imgsToDelete.length) + 1);
+
     timerObj.value = 5 + Number(timerObj.value);
-    if(timerObj.value == timerObj.max){
+
+    //figures exeqution
+    imgsToDelete[happyNumber].parentNode.removeChild(imgsToDelete[happyNumber]);
+
+    if(timerObj.value == timerObj.max)
         clearInterval(intervalTimeout);
-    }
 }
