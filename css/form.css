@@ -1,0 +1,23 @@
+/* 
+    Register form style 
+*/
+
+.registerForm {
+    border: 0 solid;
+    border-radius: 15px;
+    height: 700px;
+    width: 300px;
+    background-color: #996666;
+    color: #f0f8ff;
+    padding: 25px;
+    margin-top: 5em;
+    margin-left: 8em;
+}
+
+/* 
+    End of register form style 
+*/
+
+button {
+    margin-left: 5em;
+}
