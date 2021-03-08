@@ -7,11 +7,6 @@ let data = new Map([
     ['pawn', 0]
 ]);
 
-//form related stuff
-function doSomething() {
-    document.getElementById("noSharing").value = "I`m going to share this text";
-}
-
 function countFigures() {
     let ammount = [];
     let figures = document.getElementsByTagName('img');
