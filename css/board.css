@@ -1,0 +1,47 @@
+
+/* 
+    board plate styles 
+*/
+.par {
+    background-color: #f0f8ff;
+    color: #996666;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nepar {
+    background-color: #996666;
+    color: #f0f8ff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 
+    chess figures style 
+*/
+.figure {
+    height: 90px;
+}
+
+/* 
+    coordinates styles 
+*/
+td {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    color: #4d2525;
+}
+
+td div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+td span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
