@@ -1,4 +1,0 @@
-function main() {
-    //doSomething();
-    buildChart();
-}
